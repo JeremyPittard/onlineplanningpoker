@@ -1,0 +1,56 @@
+# Node.js dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+# keep the example file for reference
+!.env.example
+
+# Build output
+dist/
+build/
+out/
+
+# Vite-specific
+.vite/
+.vite-cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Git-specific
+.git/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Miscellaneous
+*.lock
+*.cache
