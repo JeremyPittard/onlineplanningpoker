@@ -1,9 +1,15 @@
-import { Hono } from 'hono'
+import { Hono } from "hono";
+import { cors } from "hono/cors";
 
-const app = new Hono()
+import { PokerTable } from "./durable_objects/PokerTable";
+import root from "./routes/root";
+import connect from "./routes/connect";
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+const app = new Hono();
+app.use("*", cors({ origin: "*" })); // Allow all origins
 
-export default app
+app.route("/", root);
+app.route("/connect", connect);
+
+export { PokerTable };
+export default app;

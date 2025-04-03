@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "front": "pnpm --filter frontend run dev",
     "back": "pnpm --filter backend run dev",
-    "dev": "concurrently \"pnpm front\" \"pnpm back\""
+    "dev": "concurrently \"pnpm front\" \"pnpm back\"",
+    "storytime": "pnpm --filter frontend storybook"
   },
   "workspaces": [
     "frontend",

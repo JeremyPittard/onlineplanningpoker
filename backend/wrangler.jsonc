@@ -2,7 +2,21 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "backend",
   "main": "src/index.ts",
-  "compatibility_date": "2025-04-01"
+  "compatibility_date": "2025-03-01",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "POKER_TABLE",
+        "class_name": "PokerTable"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["PokerTable"]
+    }
+  ]
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
